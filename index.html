@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canal de Podcast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2d9d6f3f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+    <nav class="navbar">
+        <div class="brand">
+        <img src="BTXA.png" alt="Logo Canal de Podcast" class="logo">
+        <h1 class="site-title">Canal <span>Podcast</span></h1>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="menú">
+        <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#episodios">Episodios</a></li>
+            <li><a href="#invitados">Invitados</a></li>
+            <li><a href="#about">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Historias que inspiran</h2>
+            <p>Un podcast semanal sobre tecnología, diseño y cultura digital.</p>
+            <a href="#episodios" class="btn">Escuchar episodios</a>
+        </div>
+        <div class="hero-image">
+        <img src="/fotos/phone.png" alt="Teléfono con la app del podcast">
+        </div>
+    </section>
+    </header>
+    <div class="galeria-contenedor">
+        <div class="imagen-item"><img src="/TPSATW/fotos/An-E.R.A.Univac-1103-computer-in-the-1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s"></div>
+        <div class="imagen-item"><img src="/TPSATW/fotos/Computer-operators-with-an-Eniac—the-world’s-first-programmable-general-purpose-computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer"></div>
+        <div class="imagen-item"><img src="/TPSATW/fotos/grace-hopper.png" alt="grace hoppe"></div>
+        <div class="imagen-item"><img src="/TPSATW/fotos/Katie-Bouman.png" alt="fotos/Katie Bouman"></div>
+        <div class="imagen-item"><img src="/TPSATW/fotos/Margaret_Hamilton.png" alt="Margaret Hamilton"></div>
+        <div class="imagen-item"><img src="/TPSATW/fotos/susan-kare.png" alt="susan kare"></div>
+    </div>
+    <main>
+    <!-- Episodios -->
+    <section id="episodios" class="section episodes">
+        <h3 class="section-title">Episodios recientes</h3>
+        <div class="episodes-grid">
+        <article class="episode-card">
+            <!--img src="fotos/disenio.jpg" alt="Portada episodio 1" class="episode-img"-->
+            <div class="episode-body">
+            <h4>La revolución del diseño</h4>
+            <p class="episode-desc">Entrevista con diseñadores que están cambiando las reglas del juego.</p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2UCKclOTUmp8Gq4X0MdBNF?utm_source=generator&t=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </article>
+
+        <article class="episode-card">
+            <!--img src="fotos/episode2.png" alt="Portada episodio 2" class="episode-img"-->
+            <div class="episode-body">
+            <h4>Startups y cultura</h4>
+            <p class="episode-desc">Hablamos con fundadores sobre la cultura de trabajo.</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/5qtGHZThYgBTwvOgQxhM9G?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </article>
+
+        <article class="episode-card">
+            <!--img src="fotos/episode3.png" alt="Portada episodio 3" class="episode-img"-->
+            <div class="episode-body">
+            <h4>Educación y futuro</h4>
+            <p class="episode-desc">Cómo la educación está cambiando en la era digital.</p>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0miwHtOI8am8HtAyJoxtxJ?utm_source=generator&t=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </article>
+        </div>
+    </section>
+
+    <!-- Invitados -->
+    <section id="invitados" class="section guests">
+        <h3 class="section-title">Invitados estelares</h3>
+        <div class="guests-grid">
+        <div class="guest-card">
+            <img src="/fotos/MariaLopez.jpeg" alt="María López, diseñadora UX y autora" class="guest-img">
+            <h4>María López</h4>
+            <p>Diseñadora UX y autora.</p>
+        </div>
+        <div class="guest-card">
+            <img src="/fotos/JorgePerez.jpeg" alt="Jorge Pérez, fundador de startup" class="guest-img">
+            <h4>Jorge Pérez</h4>
+            <p>Fundador de startup.</p>
+        </div>
+        <div class="guest-card overlap">
+            <img src="/fotos/AnaGomez.jpeg" alt="Ana Gómez, investigadora en educación digital" class="guest-img">
+            <h4>Ana Gómez</h4>
+            <p>Investigadora en educación digital.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about" class="section about">
+        <h3 class="section-title">Sobre el proyecto</h3>
+        <div class="about-grid">
+            <p>Canal Podcast nace para divulgar historias y experiencias de profesionales del mundo digital. Nuestro objetivo es compartir aprendizajes y recursos.</p>
+            <img src="/fotos/podcast.svg" alt="Ilustración sobre podcast">
+        </div>
+    </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-inner">
+        <p>&copy; 2025 Canal Podcast</p>
+        <div class="socials">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://spotify.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i></a>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
+
+
+
