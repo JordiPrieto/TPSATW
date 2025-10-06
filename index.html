@@ -13,55 +13,24 @@
     <header class="site-header">
     <nav class="navbar">
         <div class="brand">
-        <img src="/fotos/BTXA.png" alt="Logo Canal de Podcast" class="logo">
-        <h1 class="site-title">Canal <span>Podcast</span></h1>
+            <img src="/fotos/BTXA.png" alt="Logo Canal de Podcast" class="logo">
+            <h1 class="site-title">Canal <span>Podcast</span></h1>
         </div>
 
         <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="menú">
         <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
+            <span></span>
         </label>
 
         <ul class="nav-links">
-            <li>
-                <label for="nav-toggle">
-                    <a href="#home">Inicio</a>
-                </label>
-            </li>
-            <li>
-                <label for="nav-toggle">
-                    <a href="#episodios">Episodios</a>
-                </label>
-            </li>
-            <li>
-                <label for="nav-toggle">
-                    <a href="#invitados">Invitados</a>
-                </label>
-            </li>
-            <li>
-                <label for="nav-toggle">
-                    <a href="#about">Sobre</a>
-                </label>
-            </li>
-        </ul>
-
-        <!--ul class="nav-links">
             <li><a href="#home">Inicio</a></li>
             <li><a href="#episodios">Episodios</a></li>
             <li><a href="#invitados">Invitados</a></li>
             <li><a href="#about">Sobre</a></li>
-        </!--ul-->
+        </ul>
     </nav>
-    <section id="home" class="hero">
-        <div class="hero-content">
-        ...
-        </div>
-        <div class="hero-image">
-            <img src="/fotos/phone.png" alt="Teléfono con la app del podcast" class="superpuesta">
-         </div>
-    </section>
 
-    <!--section id="home" class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
             <h2>Historias que inspiran</h2>
             <p>Un podcast semanal sobre tecnología, diseño y cultura digital.</p>
@@ -70,7 +39,7 @@
         <div class="hero-image">
         <img src="/fotos/phone.png" alt="Teléfono con la app del podcast">
         </div>
-    </!--section-->
+    </section>
     </header>
     <div class="galeria-contenedor">
         <div class="imagen-item"><img src="/fotos/An-E.R.A.Univac-1103-computer-in-the-1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s"></div>
@@ -84,35 +53,58 @@
     <!-- Episodios -->
     <section id="episodios" class="section episodes">
         <h3 class="section-title">Episodios recientes</h3>
-        <div class="episodes-grid">
+  
+    <div class="episodes-grid">
+
         <article class="episode-card">
-            <!--img src="fotos/disenio.jpg" alt="Portada episodio 1" class="episode-img"-->
-            <div class="episode-body">
+        <!-- <img src="fotos/disenio.jpg" alt="Portada episodio 1" class="episode-img"> -->
+        <div class="episode-body">
             <h4>La revolución del diseño</h4>
             <p class="episode-desc">Entrevista con diseñadores que están cambiando las reglas del juego.</p>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2UCKclOTUmp8Gq4X0MdBNF?utm_source=generator&t=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="iframe-wrapper">
+                <iframe
+                src="https://open.spotify.com/embed/episode/2UCKclOTUmp8Gq4X0MdBNF?utm_source=generator&t=0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+                </iframe>
             </div>
-        </article>
+        </div>
+    </article>
 
-        <article class="episode-card">
-            <!--img src="fotos/episode2.png" alt="Portada episodio 2" class="episode-img"-->
-            <div class="episode-body">
+    <article class="episode-card">
+        <!-- <img src="fotos/episode2.png" alt="Portada episodio 2" class="episode-img"> -->
+        <div class="episode-body">
             <h4>Startups y cultura</h4>
             <p class="episode-desc">Hablamos con fundadores sobre la cultura de trabajo.</p>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/5qtGHZThYgBTwvOgQxhM9G?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="iframe-wrapper">
+                <iframe
+                    src="https://open.spotify.com/embed/episode/5qtGHZThYgBTwvOgQxhM9G?utm_source=generator"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy">
+                </iframe>
             </div>
-        </article>
+        </div>
+    </article>
 
-        <article class="episode-card">
-            <!--img src="fotos/episode3.png" alt="Portada episodio 3" class="episode-img"-->
-            <div class="episode-body">
+    <article class="episode-card">
+    <!-- <img src="fotos/episode3.png" alt="Portada episodio 3" class="episode-img"> -->
+        <div class="episode-body">
             <h4>Educación y futuro</h4>
             <p class="episode-desc">Cómo la educación está cambiando en la era digital.</p>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0miwHtOI8am8HtAyJoxtxJ?utm_source=generator&t=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="iframe-wrapper">
+                <iframe
+                    src="https://open.spotify.com/embed/episode/0miwHtOI8am8HtAyJoxtxJ?utm_source=generator&t=0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy">
+                </iframe>
             </div>
-        </article>
         </div>
+    </article>
+
+    </div>
     </section>
+
+    
 
     <!-- Invitados -->
     <section id="invitados" class="section guests">

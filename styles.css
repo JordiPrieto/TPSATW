@@ -62,18 +62,6 @@ img {
     font-weight: 400;
 }
 
-.nav-links label {
-    cursor: pointer;
-   /* Opcional: elimina estilos para que parezca solo un enlace */
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: block;
-}
-
-
-
 .nav-links {
     position: fixed;
     inset: 60px 0 0 0;
@@ -246,40 +234,16 @@ body {
     text-decoration: none;
 }
 
-/*.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}*/
-
-.hero-image img {
-    max-width: 260px;
-}
-.hero {
-    position: relative; /* Para posicionar hijos absolutamente */
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 2rem 1rem;
-    background: linear-gradient(180deg, #f8fbff, #eef6ff);
-}
-
 .hero-image {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    position: relative;
 }
 
-.superpuesta {
-    position: absolute;
-    bottom: -40px; /* sobresale por abajo */
-    right: 10%;    /* puedes ajustar para que sobresalga a la derecha */
+.hero-image img {
     max-width: 260px;
-    box-shadow: 0 12px 36px rgba(0,0,0,0.15); /* para destacar la superposición */
-    z-index: 2;
 }
+
 /* Secciones */
 .section {
     padding: 2rem 1rem;
@@ -312,12 +276,19 @@ body {
     border-radius: 8px;
 }
 
-.episode-body iframe {
+.iframe-wrapper {
     width: 100%;
-    height: 180px;
-    border-radius: 8px;
-    border: 0;
+    max-width: 600px; /* opcional, ajusta el ancho máximo */
+    margin: 0 auto;
 }
+
+.iframe-wrapper iframe {
+    width: 100%;
+    height: 352px;
+    border: 0;              /* reemplaza frameborder="0" */
+    border-radius: 12px;    /* mantiene el estilo original */
+}
+
 
 /* Invitados (flex con wrap y solapamiento) */
 .guests-grid {
