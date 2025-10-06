@@ -246,16 +246,40 @@ body {
     text-decoration: none;
 }
 
-.hero-image {
+/*.hero-image {
     flex: 1;
     display: flex;
     justify-content: center;
-}
+}*/
 
 .hero-image img {
     max-width: 260px;
 }
+.hero {
+    position: relative; /* Para posicionar hijos absolutamente */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background: linear-gradient(180deg, #f8fbff, #eef6ff);
+}
 
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.superpuesta {
+    position: absolute;
+    bottom: -40px; /* sobresale por abajo */
+    right: 10%;    /* puedes ajustar para que sobresalga a la derecha */
+    max-width: 260px;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.15); /* para destacar la superposición */
+    z-index: 2;
+}
 /* Secciones */
 .section {
     padding: 2rem 1rem;
